@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react'
+import Timer from './Timer.js';
 
-function CenterC() {
+export default function TextForm(props) {
+    const [Text,setText]=useState("");
   return (
-    <div class="container-xxl my-13 mb-13">
+    <>
+    <Timer />
+    <div className="Container myclass"  >
+        <textarea className={`form-control bg-dark`} data-bs-theme="dark" id="mybox" rows="8" value={Text} placeholder='Enter the text' ></textarea>
     </div>
-  );
+    </>
+  )
 }
-
-export default CenterC;

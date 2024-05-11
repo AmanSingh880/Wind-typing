@@ -1,4 +1,6 @@
 import React from 'react';
+import CenterC from './centerc.js';
+
 
 export default function Navbar() {
   return (
@@ -20,6 +22,7 @@ export default function Navbar() {
             </ul>
           </div>
         </nav>
+        <CenterC />
 
 
         <nav className="navbar bg-dark fixed-bottom border-bottom border-body" data-bs-theme="dark">
